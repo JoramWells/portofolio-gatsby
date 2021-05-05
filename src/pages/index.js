@@ -12,51 +12,61 @@ const IndexPage = () => (
     <h2 style={{ textAlign: "center" }}>Fast, Reliable, Secure</h2>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <Row justify="space-around">
+    <Row justify="space-around" style={{ fontFamily: "Arial" }}>
       <Col>
         <Card
           cover={
             <StaticImage
-              src="../images/fast.svg"
-              width={200}
+              src="../images/secure.svg"
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
               alt="A fast"
             />
           }
-        >
-          <h3>Fast</h3>
-        </Card>
-      </Col>
-      <Col>
-        <Card
-          cover={
-            <StaticImage
-              src="../images/Success.svg"
-              alt="success"
-              width={200}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              style={{marginBottom:"2rem"}}
-            />
-          }
-        >
-          <h3>Reliable</h3>
-        </Card>
-      </Col>
-      <Col>
-        <Card
-          cover={
-            <StaticImage
-              src="../images/Server.svg"
-              alt="server"
-              width={200}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-            />
-          }
+          style={{ width: "15rem", border:"0" }}
         >
           <h3>Secure</h3>
+          <p style={{ color: "grey" }}>
+            Google authentication for fast user signin, encrypted data,
+            increased cyber crimes, protect user data
+          </p>
+        </Card>
+      </Col>
+      <Col>
+        <Card
+          cover={
+            <StaticImage
+              src="../images/stars.svg"
+              alt="success"
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+            />
+          }
+          style={{ width: "15rem", border:"0" }}
+        >
+          <h3>Fast</h3>
+          <p style={{color:"grey", fontSize:"14px"}}>
+            Applications that run fast and smoothless, ensure amazing client
+            experience
+          </p>
+        </Card>
+      </Col>
+      <Col>
+        <Card
+          cover={
+            <StaticImage
+              src="../images/success.svg"
+              alt="server"
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+            />
+          }
+          style={{ width: "15rem", border:"0" }}
+        >
+          <h3>Reliable</h3>
+          <p style={{color:"grey", fontSize:"14px"}}>
+            Applications that meet user expectations and your companies demands.
+          </p>
         </Card>
       </Col>
     </Row>
