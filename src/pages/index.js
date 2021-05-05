@@ -1,13 +1,28 @@
 import * as React from "react"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { Card, Row, Col } from "antd"
+import { Card, Row, Col,Menu } from "antd"
 // import Layout from "../components/layout"
 // import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
     {/* <Seo title="Unable" /> */}
+    <Menu mode="horizontal" style={{fontFamily:"Arial", padding:".7rem", fontSize:"16px"}}>
+      <Menu.Item>
+        About us
+      </Menu.Item>
+      <Menu.Item>
+        Services
+      </Menu.Item>
+      <Menu.Item>
+        Contact us
+      </Menu.Item>
+      <Menu.Item>
+        Blog
+      </Menu.Item>
+
+    </Menu>
     <Row
       justify="space-around"
       align="middle"
